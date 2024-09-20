@@ -7,14 +7,14 @@
     <style>
         body {
             font-family: Georgia, serif;
-            background-color: #32ff00; /* Bright green background */
+            background-color: #05a810; /* Green background */
             margin: 0;
             padding: 20px;
         }
 
         h1, h2 {
             text-align: center;
-            color: #333;
+            color: #050505;
         }
 
         /* Centering the entire gallery */
@@ -26,9 +26,11 @@
         /* Gallery Grid Layout */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive grid */
+            grid-template-columns: 1fr; /* Limit the grid to one column */
             gap: 15px;
             justify-items: center; /* Center images within their grid cells */
+            width: 100%; /* Make the gallery take up full width of the page */
+            max-width: 500px; /* Optional: Limit the maximum width of the gallery */
         }
 
         .gallery img {
@@ -67,4 +69,8 @@
             <img src="IC 5.jpg" alt="Irene Cox painting of flowers on a beige background 18">
             <img src="IC 6.jpg" alt="Irene Cox painting of flowers on a beige background 19">
             <img src="IC 7.jpg" alt="Irene Cox painting of flowers on a beige background 20">
-            <
+        </div>
+    </div>
+
+</body>
+</html>
