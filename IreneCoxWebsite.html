@@ -11,18 +11,24 @@
             margin: 0;
             padding: 20px;
         }
-        h1 {
+
+        h1, h2 {
             text-align: center;
             color: #333;
         }
+
+        /* Gallery Grid Layout */
         .gallery {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive grid */
             gap: 15px;
+            justify-items: center; /* Center images horizontally */
         }
+
         .gallery img {
-            width: 50%;
-            height: auto;
+            width: 100%; /* Set image width to 100% of the grid cell */
+            max-width: 400px; /* Optional: Limit the maximum width */
+            height: auto; /* Maintain aspect ratio */
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
@@ -31,7 +37,8 @@
 <body>
 
     <h1>Irene Cox</h1>
-    <h2 style="text-align: center;">Retr∞spective</h2>
+    <h2>Retr∞spective</h2>
+
     <div class="gallery">
         <img src="COX1.png" alt="Irene Cox painting of flowers on a beige background 1">
         <img src="COX2.png" alt="Irene Cox painting of flowers on a beige background 2">
@@ -45,8 +52,8 @@
         <img src="COX10.png" alt="Irene Cox painting of flowers on a beige background 10">
         <img src="COX11.png" alt="Irene Cox painting of flowers on a beige background 11">
         <img src="COX12.png" alt="Irene Cox painting of flowers on a beige background 12">
-		<img src="COX13.png" alt="Irene Cox painting of flowers on a beige background 13">
-		<img src="IC 1.jpg" alt="Irene Cox painting of flowers on a beige background 14">
+        <img src="COX13.png" alt="Irene Cox painting of flowers on a beige background 13">
+        <img src="IC 1.jpg" alt="Irene Cox painting of flowers on a beige background 14">
         <img src="IC 2.jpg" alt="Irene Cox painting of flowers on a beige background 15">
         <img src="IC 3.jpg" alt="Irene Cox painting of flowers on a beige background 16">
         <img src="IC 4.jpg" alt="Irene Cox painting of flowers on a beige background 17">
@@ -58,8 +65,8 @@
         <img src="IC 10.jpg" alt="Irene Cox painting of flowers on a beige background 23">
         <img src="IC 11.jpg" alt="Irene Cox painting of flowers on a beige background 24">
         <img src="IC 12.jpg" alt="Irene Cox painting of flowers on a beige background 25">
-		<img src="IC 13.jpg" alt="Irene Cox painting of flowers on a beige background 26">
-		<img src="IC 14.jpg" alt="Irene Cox painting of flowers on a beige background 27">
+        <img src="IC 13.jpg" alt="Irene Cox painting of flowers on a beige background 26">
+        <img src="IC 14.jpg" alt="Irene Cox painting of flowers on a beige background 27">
     </div>
 
 </body>
