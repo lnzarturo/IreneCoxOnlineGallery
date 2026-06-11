@@ -6,56 +6,59 @@
     <title>Irene Cox</title>
 
     <style>
-        body {
-            font-family: Georgia, serif;
-            background-color: #02eb12;
-            margin: 0;
-            padding: 20px;
-        }
+      body {
+    font-family: Georgia, serif;
+    background-color: #02eb12;
+    margin: 0;
+    padding: 20px;
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+    /* THIS is the missing piece */
+    display: flex;
+    justify-content: center;
+}
 
-        h1, h2 {
-            text-align: center;
-            color: #050505;
-        }
+main {
+    width: 100%;
+    max-width: 800px;
+}
 
-        /* GALLERY */
-        .gallery {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 15px;
-        }
+h1, h2 {
+    text-align: center;
+    color: #050505;
+}
 
-        .gallery a {
-            display: block;
-            text-decoration: none;
-        }
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
+.gallery a {
+    display: block;
+}
 
-        /* VIDEO */
-        .video-container {
-            margin-top: 40px;
-        }
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 
-        .video-container iframe {
-            width: 100%;
-            height: 450px;
-            border: 0;
-            display: block;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
+/* VIDEO */
+.video-container {
+    margin-top: 40px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
     </style>
 </head>
 
