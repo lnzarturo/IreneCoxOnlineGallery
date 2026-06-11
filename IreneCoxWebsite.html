@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Irene Cox</title>
+
     <style>
         body {
             font-family: Georgia, serif;
-            background-color:#02eb12; /* Green background */
+            background-color: #02eb12;
             margin: 0;
             padding: 20px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         h1, h2 {
@@ -17,32 +23,47 @@
             color: #050505;
         }
 
-        /* Centering the entire gallery */
         .gallery-container {
             display: flex;
-            justify-content: center; /* Center the gallery horizontally */
+            justify-content: center;
         }
 
-        /* Gallery Grid Layout */
         .gallery {
             display: grid;
-            grid-template-columns: 1fr; /* Limit the grid to one column */
+            grid-template-columns: 1fr;
             gap: 15px;
-            justify-items: center; /* Center images within their grid cells */
-            width: 80%; /* Make the gallery take up full width of the page */
-            max-width: 800px; /* Optional: Limit the maximum width of the gallery */
+            justify-items: center;
+            width: 80%;
+            max-width: 800px;
         }
 
         .gallery img {
-            width: 100%; /* Set image width to 100% of the grid cell */
-            max-width: 800px; /* Optional: Limit the maximum width */
-            height: auto; /* Maintain aspect ratio */
+            width: 100%;
+            max-width: 800px;
+            height: auto;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
+
+        /* Center and make Vimeo responsive */
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9;
+            border: 0;
+        }
     </style>
 </head>
+
 <body>
+
+<main>
 
     <h1>Irene Cox</h1>
     <h2>Online Retr∞spective</h2>
@@ -69,34 +90,26 @@
             <img src="IC 5.jpg" alt="Irene Cox painting of flowers on a beige background 18">
             <img src="IC 6.jpg" alt="Irene Cox painting of flowers on a beige background 19">
             <img src="IC 7.jpg" alt="Irene Cox painting of flowers on a beige background 20">
-			<img src="IC 8.jpg" alt="Irene Cox painting of flowers on a beige background 21">
-			<img src="IC 9.jpg" alt="Irene Cox painting of flowers on a beige background 22">
-			<img src="IC 10.jpg" alt="Irene Cox painting of flowers on a beige background 23">
-			<img src="IC 11.jpg" alt="Irene Cox painting of flowers on a beige background 24">
-			<img src="IC 12.jpg" alt="Irene Cox painting of flowers on a beige background 25">
-			<img src="IC 13.jpg" alt="Irene Cox painting of flowers on a beige background 26">
-			<img src="IC 14.jpg" alt="Irene Cox painting of flowers on a beige background 27">
+            <img src="IC 8.jpg" alt="Irene Cox painting of flowers on a beige background 21">
+            <img src="IC 9.jpg" alt="Irene Cox painting of flowers on a beige background 22">
+            <img src="IC 10.jpg" alt="Irene Cox painting of flowers on a beige background 23">
+            <img src="IC 11.jpg" alt="Irene Cox painting of flowers on a beige background 24">
+            <img src="IC 12.jpg" alt="Irene Cox painting of flowers on a beige background 25">
+            <img src="IC 13.jpg" alt="Irene Cox painting of flowers on a beige background 26">
+            <img src="IC 14.jpg" alt="Irene Cox painting of flowers on a beige background 27">
         </div>
     </div>
-	
-<div class="gallery-container">
-    <div class="gallery">
-        <!-- all your images -->
+
+    <div class="video-container">
+        <iframe
+            title="vimeo-player"
+            src="https://player.vimeo.com/video/944658767?h=e53fd19b9b"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+        </iframe>
     </div>
-</div>
 
-<div class="video-container">
-    <iframe
-        title="vimeo-player"
-        src="https://player.vimeo.com/video/944658767?h=e53fd19b9b"
-        width="640"
-        height="360"
-        frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen>
-    </iframe>
-</div>
+</main>
 
-	
 </body>
 </html>
